@@ -1,110 +1,119 @@
-# 🐍 Python + Git Zero-to-Hero Program
+# Python + Git Class
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Git Version Control](https://img.shields.io/badge/Git-Professional-orange.svg)](https://git-scm.com/)
-[![Author: Subhash107k](https://img.shields.io/badge/Author-Subhash107k-brightgreen.svg)](https://github.com/Subhash107k)
+This repository is a hands-on Python and Git learning workspace for beginners. It includes daily lesson notes, Jupyter notebooks, small practice projects, and supporting documentation.
 
-Welcome to the **Python + Git Zero-to-Hero Practical Learning Program** repository! This curriculum takes a beginner from **absolute Python fundamentals to practical intermediate/advanced software development**, while teaching **Git and GitHub version control from scratch to professional team workflows**.
+## What is inside
 
----
+- [class](class) — daily lessons and notebooks from Day 1 to Day 20
+- [docs](docs) — extra notes and learning reports
+- [notebooks](notebooks) — additional notebook practice files
+- [projects](projects) — small practical projects such as the Nepal weather CLI and the QR generator
+- [requirements.txt](requirements.txt) — Python dependencies for the workspace
+- [test.py](test.py) — quick local testing script
 
-## 👨‍💻 Author & Maintainer
+## Daily lesson files
 
-Developed and curated by **[Subhash107k](https://github.com/Subhash107k)**.
+These links open the lesson notes and notebooks for each day of the course.
 
-- **GitHub Profile**: [@Subhash107k](https://github.com/Subhash107k)
-- **Project Repository**: [Python_Git_Class](https://github.com/Subhash107k/Python_Git_Class)
+- Day 1: [Markdown](class/day1.md) | [Notebook](class/day1.ipynb)
+- Day 2: [Markdown](class/day2.md) | [Notebook](class/day2.ipynb)
+- Day 3: [Markdown](class/day3.md) | [Notebook](class/day3.ipynb)
+- Day 4: [Markdown](class/day4.md) | [Notebook](class/day4.ipynb)
+- Day 5: [Markdown](class/day5.md) | [Notebook](class/day5.ipynb)
+- Day 6: [Markdown](class/day6.md) | [Notebook](class/day6.ipynb)
+- Day 7: [Markdown](class/day7.md) | [Notebook](class/day7.ipynb)
+- Day 8: [Markdown](class/day8.md) | [Notebook](class/day8.ipynb)
+- Day 9: [Markdown](class/day9.md) | [Notebook](class/day9.ipynb)
+- Day 10: [Markdown](class/day10.md) | [Notebook](class/day10.ipynb)
+- Day 11: [Markdown](class/day11.md) | [Notebook](class/day11.ipynb)
+- Day 12: [Markdown](class/day12.md) | [Notebook](class/day12.ipynb)
+- Day 13: [Markdown](class/day13.md) | [Notebook](class/day13.ipynb)
+- Day 14: [Markdown](class/day14.md) | [Notebook](class/day14.ipynb)
+- Day 15: [Markdown](class/day15.md) | [Notebook](class/day15.ipynb)
+- Day 16: [Markdown](class/day16.md) | [Notebook](class/day16.ipynb)
+- Day 17: [Markdown](class/day17.md) | [Notebook](class/day17.ipynb)
+- Day 18: [Markdown](class/day18.md) | [Notebook](class/day18.ipynb)
+- Day 19: [Markdown](class/day19.md) | [Notebook](class/day19.ipynb)
+- Day 20: [Markdown](class/day20.md) | [Notebook](class/day20.ipynb)
 
----
+## Curriculum map
 
-## 📌 Course Highlights
+This section gives a quick overview of the course flow from beginner Python topics to Git practices and milestone projects.
 
-- **Practical Classroom Focus**: Built around real code, actual output, hands-on debugging, and portfolio-grade projects.
-- **Integrated Git & GitHub**: Git is taught starting **Day 1** and used daily to stage, commit, branch, merge, and push Python classroom work.
-- **Progressive Projects**: Contains 4 milestone projects (CLI Assistant, Data File Processor, OOP Inventory Analytics Engine, and Capstone PAAMS CLI Application).
-- **Comprehensive Deliverables**: Available in both Markdown lessons (`day1.md`–`day20.md`) and interactive Jupyter Notebooks (`day1.ipynb`–`day20.ipynb`).
+| Day | Python topic                                | Git / GitHub topic               | Deliverables                                                  |
+| --- | ------------------------------------------- | -------------------------------- | ------------------------------------------------------------- |
+| 01  | Python setup, interpreter, syntax, comments | git config, git init             | [day1.md](class/day1.md) · [day1.ipynb](class/day1.ipynb)     |
+| 02  | Variables, data types, casting, input()     | 3-stage model (add, commit)      | [day2.md](class/day2.md) · [day2.ipynb](class/day2.ipynb)     |
+| 03  | Operators, strings, slicing, methods        | git status, git log, git diff    | [day3.md](class/day3.md) · [day3.ipynb](class/day3.ipynb)     |
+| 04  | Control flow, logic, if/elif/else           | Branching basics                 | [day4.md](class/day4.md) · [day4.ipynb](class/day4.ipynb)     |
+| 05  | Loops and control statements                | Remote setup (git push)          | Project 1: CLI Tool                                           |
+| 06  | Lists, tuples, custom sort keys             | Remote syncing (git pull)        | [day6.md](class/day6.md) · [day6.ipynb](class/day6.ipynb)     |
+| 07  | Sets, dictionaries, nested structures       | Feature branch isolation         | [day7.md](class/day7.md) · [day7.ipynb](class/day7.ipynb)     |
+| 08  | Comprehensions and memory basics            | .gitignore and repository docs   | [day8.md](class/day8.md) · [day8.ipynb](class/day8.ipynb)     |
+| 09  | Functions, parameters, scope                | Workspace management (git stash) | [day9.md](class/day9.md) · [day9.ipynb](class/day9.ipynb)     |
+| 10  | \*args, \*\*kwargs, lambdas, map/filter     | Branch merging                   | [day10.md](class/day10.md) · [day10.ipynb](class/day10.ipynb) |
+| 11  | Modules and main guard                      | Virtual environments             | [day11.md](class/day11.md) · [day11.ipynb](class/day11.ipynb) |
+| 12  | File I/O, CSV, JSON, context managers       | Recovery with restore and revert | [day12.md](class/day12.md) · [day12.ipynb](class/day12.ipynb) |
+| 13  | Exception handling                          | Conflict resolution markers      | Project 2: File Processor                                     |
+| 14  | OOP basics: classes and objects             | Version tagging                  | [day14.md](class/day14.md) · [day14.ipynb](class/day14.ipynb) |
+| 15  | Advanced OOP: inheritance and encapsulation | GitHub pull request workflows    | [day15.md](class/day15.md) · [day15.ipynb](class/day15.ipynb) |
+| 16  | Generators and decorators                   | Issue tracking                   | [day16.md](class/day16.md) · [day16.ipynb](class/day16.ipynb) |
+| 17  | Standard library and pathlib                | Advanced Git (rebase)            | [day17.md](class/day17.md) · [day17.ipynb](class/day17.ipynb) |
+| 18  | NumPy arrays, vectorization, indexing       | Binary file ignore               | Project 3: Analytics Engine                                   |
+| 19  | Portfolio architecture and package layout   | Branch scaffolding               | [day19.md](class/day19.md) · [day19.ipynb](class/day19.ipynb) |
+| 20  | Capstone completion and optimization        | Production release tag           | Final capstone: PAAMS CLI                                     |
 
----
+## Key files
 
-## 🗺️ Curriculum Map
+These links point to the most important files in the repository.
 
-| Day | Python Topic | Git / GitHub Topic | Main Deliverables |
-| :---: | :--- | :--- | :--- |
-| **01** | Python Setup, Interpreter, Syntax, Comments | `git config`, `git init` | [`day1.md`](day1.md) \| [`day1.ipynb`](day1.ipynb) |
-| **02** | Variables, Data Types, Casting, `input()` | 3-Stage Model (`add`, `commit`) | [`day2.md`](day2.md) \| [`day2.ipynb`](day2.ipynb) |
-| **03** | Operators, Strings, Slicing, Methods | `git status`, `git log`, `git diff` | [`day3.md`](day3.md) \| [`day3.ipynb`](day3.ipynb) |
-| **04** | Control Flow (`if`/`elif`/`else`), Logic | Branching Basics (`switch -c`) | [`day4.md`](day4.md) \| [`day4.ipynb`](day4.ipynb) |
-| **05** | Loops (`for`/`while`), Control Statements | Remote Setup (`git push`) | 🚀 **PROJECT 1**: CLI Tool |
-| **06** | Lists, Tuples, Custom Sort Keys | Remote Syncing (`git pull`) | [`day6.md`](day6.md) \| [`day6.ipynb`](day6.ipynb) |
-| **07** | Sets, Dictionaries, Nested Structs | Feature Branch Isolation | [`day7.md`](day7.md) \| [`day7.ipynb`](day7.ipynb) |
-| **08** | Comprehensions, Memory Benchmark | `.gitignore` & Repository Docs | [`day8.md`](day8.md) \| [`day8.ipynb`](day8.ipynb) |
-| **09** | Functions (`def`), Parameters, Scope | Workspace Management (`git stash`) | [`day9.md`](day9.md) \| [`day9.ipynb`](day9.ipynb) |
-| **10** | `*args`, `**kwargs`, Lambdas, `map`/`filter` | Branch Merging (`git merge`) | [`day10.md`](day10.md) \| [`day10.ipynb`](day10.ipynb) |
-| **11** | Modules, `if __name__ == '__main__':` | Virtual Envs (`.venv`) | [`day11.md`](day11.md) \| [`day11.ipynb`](day11.ipynb) |
-| **12** | File I/O (CSV, JSON), Context Managers | Recovery (`restore`, `revert`) | [`day12.md`](day12.md) \| [`day12.ipynb`](day12.ipynb) |
-| **13** | Exception Handling (`try`/`except`/`finally`) | Conflict Resolution Markers | 🚀 **PROJECT 2**: File Processor |
-| **14** | OOP Basics: Classes, Objects, `__init__` | Version Tagging (`git tag -a`) | [`day14.md`](day14.md) \| [`day14.ipynb`](day14.ipynb) |
-| **15** | Advanced OOP: Inheritance, Encapsulation | GitHub Pull Request Workflows | [`day15.md`](day15.md) \| [`day15.ipynb`](day15.ipynb) |
-| **16** | Generators (`yield`), Decorators | Issue Tracking (`Fixes #id`) | [`day16.md`](day16.md) \| [`day16.ipynb`](day16.ipynb) |
-| **17** | Standard Library (`pathlib`), Contexts | Advanced Git (`rebase`) | [`day17.md`](day17.md) \| [`day17.ipynb`](day17.ipynb) |
-| **18** | NumPy Arrays, Vectorization, Indexing | Binary File Ignore (`*.npy`) | 🚀 **PROJECT 3**: Analytics Engine |
-| **19** | Portfolio Architecture & Package Layout | Branch Scaffolding | [`day19.md`](day19.md) \| [`day19.ipynb`](day19.ipynb) |
-| **20** | Capstone Completion & Optimization | Production Release Tag (`v3.0`) | 🎓 **FINAL CAPSTONE**: PAAMS CLI |
+- [README.md](README.md)
+- [LICENSE](LICENSE)
+- [projects/nepal-weather/README.md](projects/nepal-weather/README.md)
+- [projects/nepal-weather/main.py](projects/nepal-weather/main.py)
+- [projects/qr_generator.py](projects/qr_generator.py)
 
----
+## Quick start
 
-## 🛠️ Progressive Project Milestones
+1. Create a virtual environment
 
-1. **Project 1 (End of Day 5)**: Interactive CLI Calculator & Profile Assistant (Variables, logic, loops, basic remote push).
-2. **Project 2 (End of Day 13)**: Automated Data File Processor & Report Generator (Functions, CSV/JSON, exception handling, conflict resolution).
-3. **Project 3 (End of Day 18)**: OOP Inventory System + NumPy Analytics Engine (Classes, inheritance, encapsulation, NumPy vectorization, `.npy` binary cache).
-4. **Final Capstone (End of Day 20)**: Personal Asset & Analytics Management System (PAAMS CLI) (Multi-module package, OOP domain models, NumPy analytics engine, custom decorators, GitHub Releases).
+   ```bash
+   python -m venv .venv
+   ```
 
----
+2. Activate it
+   - Windows PowerShell:
+     ```bash
+     .venv\Scripts\Activate.ps1
+     ```
+   - Bash / macOS / Linux:
+     ```bash
+     source .venv/bin/activate
+     ```
 
-## 📁 Repository Structure
+3. Install dependencies
 
-```text
-Python_Git_Class/
-│── LICENSE                            # MIT Open Source License
-│── README.md                          # Project Documentation
-│── 20_Day_Python_Git_Curriculum.md    # Master Curriculum Syllabus
-│── code_practices_workbook.md         # Hands-on Practice & Debugging Workbook
-│── day1.md ... day20.md              # Daily Markdown Lesson Guides
-│── day1.ipynb ... day20.ipynb        # Interactive Jupyter Notebooks
-└── .gitignore                         # Configured Git Ignore Rules
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+4. Open notebooks or run a project
+   - Jupyter:
+     ```bash
+     jupyter notebook
+     ```
+   - QR generator example:
+     ```bash
+     python projects/qr_generator.py "https://example.com"
+     ```
 
-## 🚀 Getting Started
+## Project highlights
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Subhash107k/Python_Git_Class.git
-cd Python_Git_Class
-```
+- Daily Python lessons in [class](class)
+- Practice notebooks in [notebooks](notebooks)
+- A Nepal weather CLI in [projects/nepal-weather](projects/nepal-weather)
+- A QR code generator in [projects/qr_generator.py](projects/qr_generator.py)
 
-### 2. Create and Activate Virtual Environment
-```bash
-# Create virtual environment
-python -m venv .venv
+## License
 
-# Activate on Windows PowerShell:
-.venv\Scripts\Activate.ps1
-# Activate on Git Bash / Linux / macOS:
-source .venv/bin/activate
-```
-
-### 3. Install Dependencies & Launch Jupyter Notebooks
-```bash
-pip install -r requirements.txt
-jupyter notebook
-```
-
----
-
-## 📄 License
-
-This repository is licensed under the **[MIT License](LICENSE)**. Created by **[Subhash107k](https://github.com/Subhash107k)**. Feel free to use, modify, and distribute for personal learning or classroom teaching.
+This project is licensed under the MIT License.

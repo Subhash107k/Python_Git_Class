@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "jupyter.jupyterCommandLineArguments": ["--notebook-dir", "${workspaceFolder}"],
+  "files.exclude": {
+    "**/.venv": true
+  }
+}
