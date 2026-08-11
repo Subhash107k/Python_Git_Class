@@ -31,6 +31,7 @@ The curriculum is restructured into a strict 7-stage learning progression:
 $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core Python} \longrightarrow \text{Intermediate Python} \longrightarrow \text{Practical Dev} \longrightarrow \text{Git/GitHub} \longrightarrow \text{Capstone Project}$$
 
 ### Key Improvements:
+
 - **Integrated Git & GitHub**: Taught from Day 1 (`git init`, `config`, `.gitignore`) and used daily for staging, committing, and pushing code.
 - **Pedagogical Re-Sequencing**: Fundamentals $\rightarrow$ Control Flow $\rightarrow$ Data Structures $\rightarrow$ Functions $\rightarrow$ Modules & File I/O $\rightarrow$ OOP $\rightarrow$ Intermediate Python & NumPy $\rightarrow$ Portfolio Project.
 - **Preserved Existing Content**: Preserved string methods, tuple vs list performance benchmarks, dictionary comprehensions, custom key sorting, and NumPy array operations, re-locating them to logical days.
@@ -43,6 +44,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 1 — Python & Git Foundations: Setup, Environment & Syntax
+
 - **Learning Objectives**: Understand Python execution, install VS Code & Python 3.x, write Python scripts, initialize Git repository.
 - **Topics Covered**: Interpreter vs `.py` script, basic syntax (`print()`, comments), Git intro, `git config`, `git init`.
 - **Theory**: Python executes sequentially via an interpreter. Git tracks file changes over time using commit snapshots.
@@ -63,6 +65,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 2 — Variables, Data Types, Type Conversion & Git Staging
+
 - **Learning Objectives**: Master variables, dynamic typing, type casting (`int()`, `float()`, `str()`, `bool()`), and Git 3-stage architecture.
 - **Topics Covered**: Variable naming rules, `type()`, scalar types (`int`, `float`, `str`, `bool`, `complex`), type casting, `input()`, Git 3-stage model (Working Tree $\rightarrow$ Staging $\rightarrow$ Repo).
 - **Theory**: Variables are dynamically typed memory references. Git isolates unstaged changes from staged commits.
@@ -85,6 +88,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 3 — Operators, Strings, String Methods & Git Logs
+
 - **Learning Objectives**: Master arithmetic/comparison/logical operators, string slicing, string methods, `git log`, and `git diff`.
 - **Topics Covered**: Arithmetic (`+`, `-`, `*`, `/`, `//`, `%`, `**`), comparison/logical ops, string immutability, slicing `[start:stop:step]`, methods (`upper`, `lower`, `strip`, `title`, `replace`, `split`, `join`), f-strings, `git log`, `git diff`.
 - **Theory**: Strings are immutable sequences. `git diff` shows modifications between working tree and index.
@@ -108,6 +112,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 4 — Conditional Logic, Decision Making & Git Branching Basics
+
 - **Learning Objectives**: Control program flow with `if`/`elif`/`else`, nested logic, and create Git feature branches.
 - **Topics Covered**: Truthy/falsy values, `if`/`elif`/`else`, nested conditions, logical chaining (`and`/`or`/`not`), PEP 8 indentation, `git branch`, `git switch`.
 - **Theory**: Conditional branching directs code execution based on boolean evaluation. Git branches isolate new feature development.
@@ -132,6 +137,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 5 — Loops, Iteration Control & Connecting Local Git to GitHub
+
 - **Learning Objectives**: Master `for` loops, `while` loops, `range()`, `break`, `continue`, and push code to GitHub.
 - **Topics Covered**: `range()`, `for` and `while` loops, `break`, `continue`, `pass`, GitHub remote setup (`git remote add`, `git push -u origin main`).
 - **Theory**: Loops repeat execution until exit conditions are met. GitHub hosts remote repositories for backup and collaboration.
@@ -149,16 +155,18 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   git branch -M main
   git push -u origin main
   ```
-- **Mini Task & Project 1**: Complete **Project 1** (Interactive CLI Calculator & Profile Tool), push to GitHub repository.
+- **Mini Task**: Complete the interactive CLI calculator & profile tool, and push to GitHub repository.
 - **Expected Outcome**: Student writes iterative loops and syncs local Git repositories with remote GitHub repositories.
 
 ---
 
 ### Day 6 — Lists, Tuples & Basic Repository Management
+
 - **Learning Objectives**: Master sequence types (`list` vs `tuple`), custom sorting, tuple unpacking, `git fetch`, and `git pull`.
 - **Topics Covered**: Lists (`[]`), mutability, `.append()`, `.insert()`, `.remove()`, `.pop()`, `.sort()`, custom sorting (`key=func`), Tuples (`()`), immutability, unpacking, nested indexing, `git fetch`, `git pull`.
 - **Theory**: Lists are mutable; tuples are fixed at creation. `git fetch` retrieves remote changes without merging; `git pull` fetches and merges.
 - **Practical Coding**:
+
   ```python
   def distance_from_fifty(n): return abs(n - 50)
   numbers = [100, 50, 65, 82, 23]
@@ -169,6 +177,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   lat, lon, elevation = coordinates
   print(f"Lat: {lat}, Lon: {lon}, Elev: {elevation}m")
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git fetch origin
@@ -180,10 +189,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 7 — Sets, Dictionaries & Nested Data Structures
+
 - **Learning Objectives**: Work with unique sets, key-value dictionaries, nested collections, and Git feature branches.
 - **Topics Covered**: Sets (`{}`), uniqueness, set algebra (`union`, `intersection`), Dictionaries (`{k: v}`), `.keys()`, `.values()`, `.items()`, `.get()`, nested structures (`dict` of `dicts`).
 - **Theory**: Sets provide unique $O(1)$ lookups. Dictionaries map unique keys to values.
 - **Practical Coding**:
+
   ```python
   unique_tags = {"python", "git", "vscode"}
   unique_tags.add("developer")
@@ -194,6 +205,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   }
   print(student_db["EMP01"]["skills"][0])
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git switch -c feature/data-structures
@@ -206,10 +218,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 8 — Comprehensions, Performance Benchmarking & GitHub Collaboration
+
 - **Learning Objectives**: Write list/dict comprehensions, benchmark list vs tuple memory/speed, configure `.gitignore` and `README.md`.
 - **Topics Covered**: List/Dict comprehensions, performance benchmarking (`sys.getsizeof()`, `time.time()`), styled `README.md`, `.gitignore` configuration (`__pycache__/`, `.venv/`).
 - **Theory**: Comprehensions offer concise sequence creation. `.gitignore` prevents dynamic build and secret files from being committed.
 - **Practical Coding**:
+
   ```python
   import sys, time
   sample_size = 1_000_000
@@ -220,6 +234,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   squares_dict = {x: x**2 for x in range(1, 11) if x % 2 == 0}
   print("Even Squares Dict:", squares_dict)
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   echo "__pycache__/" > .gitignore
@@ -234,10 +249,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 9 — Functions, Parameters, Return Values & Git Stash
+
 - **Learning Objectives**: Write modular functions (`def`), default arguments, return values, and manage temporary changes with `git stash`.
 - **Topics Covered**: `def` syntax, positional vs keyword arguments, return values, default parameters, scope (`global`), `git stash`, `git stash pop`.
 - **Theory**: Functions promote DRY code modularity. `git stash` shelves uncommitted working directory changes temporarily.
 - **Practical Coding**:
+
   ```python
   def calculate_metrics(numbers: list, scale_factor: float = 1.0):
       if not numbers: return 0, 0.0
@@ -247,6 +264,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   total, avg = calculate_metrics([10, 20, 30, 40], scale_factor=1.5)
   print(f"Scaled Total: {total}, Scaled Avg: {avg}")
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git stash
@@ -258,11 +276,13 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 
 ---
 
-### Day 10 — Advanced Functions (*args, **kwargs, Lambdas) & Merging Branches
+### Day 10 — Advanced Functions (\*args, \*\*kwargs, Lambdas) & Merging Branches
+
 - **Learning Objectives**: Master `*args`, `**kwargs`, lambda functions, `map()`, `filter()`, and branch merging (`git merge`).
 - **Topics Covered**: `*args` (tuple packing), `**kwargs` (dict packing), lambda expressions, `map()`, `filter()`, `git merge`, `git branch -d`.
 - **Theory**: `*args`/`**kwargs` allow dynamic function parameters. Merging incorporates feature branch commits into `main`.
 - **Practical Coding**:
+
   ```python
   def generate_user_report(title, *scores, **details):
       print(f"=== {title.upper()} ===")
@@ -273,6 +293,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   evens = list(filter(lambda x: x % 2 == 0, range(1, 11)))
   print("Evens:", evens)
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git switch main
@@ -286,10 +307,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 11 — Modules, Packages, Virtual Environments & Conflict Prevention
+
 - **Learning Objectives**: Build custom modules, package structures, manage `.venv` with `pip`, and prevent merge conflicts.
 - **Topics Covered**: Module imports, `__init__.py`, `if __name__ == '__main__':`, virtual environments (`python -m venv`), `requirements.txt`, merge conflict prevention.
 - **Theory**: Virtual environments isolate library dependencies. Entry guards prevent test code execution upon importing modules.
 - **Practical Coding**:
+
   ```python
   # File: math_utils.py
   def add(a, b): return a + b
@@ -299,6 +322,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
       assert add(2, 3) == 5
       print("Module self-test passed!")
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   python -m venv .venv
@@ -312,10 +336,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 12 — File Handling (TXT, CSV, JSON) & Git Reset Safety
+
 - **Learning Objectives**: Read/write TXT, CSV, and JSON files using context managers (`with`), and practice safe Git recovery (`restore`, `revert`, `reset`).
 - **Topics Covered**: File modes (`'r'`, `'w'`, `'a'`), `with` statement, `csv.reader`/`writer`, `json.dump`/`load`, `git restore`, `git revert`, `git reset`.
 - **Theory**: Context managers guarantee file handles close automatically. `git revert` safely undoes history by adding a new commit.
 - **Practical Coding**:
+
   ```python
   import csv, json
   user_data = [{"id": 1, "name": "alice"}, {"id": 2, "name": "bob"}]
@@ -328,6 +354,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
       writer.writeheader()
       writer.writerows(loaded)
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git restore users.json
@@ -339,6 +366,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 13 — Exception Handling & Resolving Merge Conflicts
+
 - **Learning Objectives**: Handle runtime exceptions (`try`/`except`/`finally`), raise custom errors, and resolve Git merge conflicts manually.
 - **Topics Covered**: `try`, `except Exception as e`, `else`, `finally`, `raise`, Git merge conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
 - **Theory**: Exception handling prevents crashes. Merge conflicts happen when concurrent commits edit identical lines differently.
@@ -361,16 +389,18 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   git add resolved_file.py
   git commit -m "fix: resolve merge conflict between branches"
   ```
-- **Mini Task & Project 2**: Complete **Project 2** (Automated File Data Processor with Exception Logging) and resolve a simulated merge conflict.
+- **Mini Task**: Complete the automated file data processor with exception logging and resolve a simulated merge conflict.
 - **Expected Outcome**: Student builds exception-resistant file scripts and resolves Git merge conflicts cleanly.
 
 ---
 
 ### Day 14 — Object-Oriented Programming: Classes, Objects & Git Tagging
+
 - **Learning Objectives**: Master OOP concepts, class creation, `__init__()` constructors, instance/class attributes, and Git release tags.
 - **Topics Covered**: Classes vs Objects, `__init__()`, `self`, instance vs class attributes, `__str__()`, Git annotated tags (`git tag -a`).
 - **Theory**: OOP encapsulates data and behavior into objects. Git tags mark release milestones (`v1.0`).
 - **Practical Coding**:
+
   ```python
   class Student:
       school_name = "Python Academy"
@@ -388,6 +418,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   s1.update_gpa(3.95)
   print(s1)
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git tag -a v1.0 -m "Release Version 1.0 - Completed Core Python & Data File Processor"
@@ -399,10 +430,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 15 — Advanced OOP & GitHub Pull Request Workflows
+
 - **Learning Objectives**: Implement Inheritance, Encapsulation, Polymorphism, method overriding (`super()`), and GitHub Pull Requests.
 - **Topics Covered**: Encapsulation (`public`, `_protected`, `__private`), Inheritance, `super().__init__()`, method overriding, GitHub PR workflow.
 - **Theory**: Inheritance promotes reuse. Encapsulation protects internal object state. PRs allow code review before merging to `main`.
 - **Practical Coding**:
+
   ```python
   class BankUser:
       def __init__(self, name: str, user_id: str):
@@ -423,6 +456,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   u.display()
   print("PIN Valid:", u.verify_pin("1234"))
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git switch -c feature/oop-refactor
@@ -437,10 +471,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 16 — Advanced Python: Iterators, Generators, Decorators & GitHub Issues
+
 - **Learning Objectives**: Build generators (`yield`), function decorators (`@decorator`), and link Git commits to GitHub Issues.
 - **Topics Covered**: Iterators (`iter()`, `next()`), Generators (`yield`), Decorators (`@wrapper`), GitHub Issue linking (`Fixes #12`).
 - **Theory**: Generators evaluate lazily to save memory. Decorators dynamically wrap and extend function behaviors.
 - **Practical Coding**:
+
   ```python
   import time
 
@@ -464,6 +500,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 
   print("Sum:", process())
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git commit -m "feat: add memory-efficient generator (Fixes #4)"
@@ -475,10 +512,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 17 — Standard Library, Context Managers & Advanced Git Operations
+
 - **Learning Objectives**: Use `pathlib`, `datetime`, custom Context Managers (`@contextmanager`), `git rebase`, and `git cherry-pick`.
 - **Topics Covered**: Standard library (`pathlib.Path`, `datetime`), Context Managers (`__enter__`/`__exit__`, `@contextmanager`), `git rebase`, `git cherry-pick`.
 - **Theory**: Context managers handle resource cleanup automatically. Rebase rewrites history to create linear commit logs.
 - **Practical Coding**:
+
   ```python
   from pathlib import Path
   from datetime import datetime
@@ -494,6 +533,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
       for p in Path(".").glob("*.py"):
           print(f" - {p.name} ({p.stat().st_size} bytes)")
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   git cherry-pick <commit-hash>
@@ -504,10 +544,12 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 18 — Numerical Computing with NumPy & Advanced Data Analytics
+
 - **Learning Objectives**: Master NumPy arrays, vectorization, reshaping, boolean masking, linear algebra, and binary `.npy` file I/O.
 - **Topics Covered**: `np.ndarray`, `arange()`, `linspace()`, `reshape()`, broadcasting, boolean masking (`arr[arr > 50]`), `@`/`matmul`, `det`, `np.save`/`load`.
 - **Theory**: NumPy arrays store contiguous C-memory blocks for fast vectorized operations. Broadcasting aligns mismatched array shapes.
 - **Practical Coding**:
+
   ```python
   import numpy as np
 
@@ -524,18 +566,20 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
   np.save("cache.npy", matrix)
   print("Loaded Cache Shape:", np.load("cache.npy").shape)
   ```
+
 - **Git/GitHub Practice**:
   ```bash
   echo "*.npy" >> .gitignore
   git add day18_numpy_analytics.py .gitignore
   git commit -m "feat: integrate NumPy analytics engine and ignore binary cache"
   ```
-- **Mini Task & Project 3**: Complete **Project 3** (OOP Inventory System + NumPy Analytics Engine), tag `v2.0`, and push.
+- **Mini Task**: Complete the OOP inventory system and NumPy analytics engine, tag `v2.0`, and push.
 - **Expected Outcome**: Student executes vectorized array computations, boolean masking, matrix math, and binary array I/O.
 
 ---
 
 ### Day 19 — Portfolio Project Architecture, Packaging & Production Workflows
+
 - **Learning Objectives**: Scaffold a multi-module production Python project, write `setup.py`, and configure repository documentation.
 - **Topics Covered**: Project directory layout (`src/`, `tests/`, `data/`), entry points (`main.py`), `setup.py`, documentation standards.
 - **Project Structure**:
@@ -565,6 +609,7 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 ---
 
 ### Day 20 — Portfolio Project Completion, Defense & Professional Git Release
+
 - **Learning Objectives**: Complete, test, and present the Capstone Project, merge to `main`, tag `v3.0-final`, and publish a GitHub Release.
 - **Topics Covered**: Project testing, refactoring, code review, merging feature branches, official GitHub Releases, project defense.
 - **Practical Execution**: Complete implementation of the Personal Asset & Analytics Management System (PAAMS CLI), verify exception handling, file parsing, and NumPy analytics engine.
@@ -582,64 +627,64 @@ $$\text{Beginner} \longrightarrow \text{Foundation} \longrightarrow \text{Core P
 
 ## 5. PROGRESSIVE PROJECTS OVERVIEW
 
-1. **Project 1 (End of Day 5)**: Interactive CLI Calculator & User Profile Tool (Variables, logic, loops, basic remote push).
-2. **Project 2 (End of Day 13)**: Automated Data File Processor & Report Generator (Functions, CSV/JSON, exceptions, merge conflict resolution).
-3. **Project 3 (End of Day 18)**: OOP Inventory & NumPy Analytics Engine (Classes, inheritance, encapsulation, NumPy array math, binary `.npy` cache).
+1. **CLI Tool (End of Day 5)**: Interactive CLI Calculator & User Profile Tool (Variables, logic, loops, basic remote push).
+2. **Data File Processor (End of Day 13)**: Automated Data File Processor & Report Generator (Functions, CSV/JSON, exceptions, merge conflict resolution).
+3. **Inventory & NumPy Analytics (End of Day 18)**: OOP Inventory & NumPy Analytics Engine (Classes, inheritance, encapsulation, NumPy array math, binary `.npy` cache).
 4. **Final Capstone (End of Day 20)**: Personal Asset & Analytics Management System (PAAMS CLI) (Multi-module package, OOP models, file services, NumPy engine, custom decorators, exceptions, complete GitHub history & tagged release).
 
 ---
 
 ## 6. GIT / GITHUB COMMAND PROGRESSION TABLE
 
-| Phase | Day Introduced | Command | Practical Classroom Context | Safety / Best Practice Rules |
-| :--- | :--- | :--- | :--- | :--- |
-| **Setup & Init** | Day 1 | `git config` | Set global user name and email | Run once per user machine. |
-| **Setup & Init** | Day 1 | `git init` | Initialize local Git repository | Run once in project root folder. |
-| **Basic Workflow**| Day 2 | `git status` | Check untracked and staged files | Run before/after staging and committing. |
-| **Basic Workflow**| Day 2 | `git add` | Stage modified files | Stage specific files or `.`. |
-| **Basic Workflow**| Day 2 | `git commit` | Save snapshot to repository history | Use clear imperative messages. |
-| **History** | Day 3 | `git log` | Review repository commit timeline | Use `--oneline --graph` for readability. |
-| **History** | Day 3 | `git diff` | Inspect unstaged vs staged changes | Review code changes before committing. |
-| **Branching** | Day 4 | `git branch` | List, create, or delete branches | Avoid working directly on `main`. |
-| **Branching** | Day 4 | `git switch` | Switch active working branches | `git switch -c` creates and switches. |
-| **Remote Sync** | Day 5 | `git remote` | Connect local repo to GitHub | Alias default remote host as `origin`. |
-| **Remote Sync** | Day 5 | `git push` | Upload local commits to remote | Use `-u origin main` on initial push. |
-| **Remote Sync** | Day 6 | `git pull` | Fetch and merge remote updates | Pull remote updates before starting work. |
-| **Workspace** | Day 9 | `git stash` | Shelve uncommitted working edits | Use `stash pop` to restore shelved edits. |
-| **Merging** | Day 10 | `git merge` | Integrate feature branch to `main` | Merge into target branch after testing. |
-| **Undo Safety** | Day 12 | `git restore` | Discard uncommitted working edits | Restores working files to last commit. |
-| **Undo Safety** | Day 12 | `git revert` | Create new commit reversing a past commit | **Safe for public history**: Non-destructive. |
-| **Undo Safety** | Day 12 | `git reset` | Move branch tip back in history | **Warning**: Avoid `--hard` on uncommitted edits. |
-| **Releases** | Day 14 | `git tag` | Mark release milestones (`v1.0`) | Push tags using `git push origin --tags`. |
-| **Advanced** | Day 17 | `git rebase` | Re-apply commits onto new base | **Caution**: Only rebase unpushed commits! |
-| **Advanced** | Day 17 | `git cherry-pick` | Apply specific commit from branch | Use to port specific bug fixes. |
+| Phase              | Day Introduced | Command           | Practical Classroom Context               | Safety / Best Practice Rules                      |
+| :----------------- | :------------- | :---------------- | :---------------------------------------- | :------------------------------------------------ |
+| **Setup & Init**   | Day 1          | `git config`      | Set global user name and email            | Run once per user machine.                        |
+| **Setup & Init**   | Day 1          | `git init`        | Initialize local Git repository           | Run once in project root folder.                  |
+| **Basic Workflow** | Day 2          | `git status`      | Check untracked and staged files          | Run before/after staging and committing.          |
+| **Basic Workflow** | Day 2          | `git add`         | Stage modified files                      | Stage specific files or `.`.                      |
+| **Basic Workflow** | Day 2          | `git commit`      | Save snapshot to repository history       | Use clear imperative messages.                    |
+| **History**        | Day 3          | `git log`         | Review repository commit timeline         | Use `--oneline --graph` for readability.          |
+| **History**        | Day 3          | `git diff`        | Inspect unstaged vs staged changes        | Review code changes before committing.            |
+| **Branching**      | Day 4          | `git branch`      | List, create, or delete branches          | Avoid working directly on `main`.                 |
+| **Branching**      | Day 4          | `git switch`      | Switch active working branches            | `git switch -c` creates and switches.             |
+| **Remote Sync**    | Day 5          | `git remote`      | Connect local repo to GitHub              | Alias default remote host as `origin`.            |
+| **Remote Sync**    | Day 5          | `git push`        | Upload local commits to remote            | Use `-u origin main` on initial push.             |
+| **Remote Sync**    | Day 6          | `git pull`        | Fetch and merge remote updates            | Pull remote updates before starting work.         |
+| **Workspace**      | Day 9          | `git stash`       | Shelve uncommitted working edits          | Use `stash pop` to restore shelved edits.         |
+| **Merging**        | Day 10         | `git merge`       | Integrate feature branch to `main`        | Merge into target branch after testing.           |
+| **Undo Safety**    | Day 12         | `git restore`     | Discard uncommitted working edits         | Restores working files to last commit.            |
+| **Undo Safety**    | Day 12         | `git revert`      | Create new commit reversing a past commit | **Safe for public history**: Non-destructive.     |
+| **Undo Safety**    | Day 12         | `git reset`       | Move branch tip back in history           | **Warning**: Avoid `--hard` on uncommitted edits. |
+| **Releases**       | Day 14         | `git tag`         | Mark release milestones (`v1.0`)          | Push tags using `git push origin --tags`.         |
+| **Advanced**       | Day 17         | `git rebase`      | Re-apply commits onto new base            | **Caution**: Only rebase unpushed commits!        |
+| **Advanced**       | Day 17         | `git cherry-pick` | Apply specific commit from branch         | Use to port specific bug fixes.                   |
 
 ---
 
 ## 7. 20-DAY CURRICULUM SUMMARY TABLE
 
-| Day | Main Python Topic | Git / GitHub Topic | Practical Classroom Work | Project / Outcome Milestone |
-| :---: | :--- | :--- | :--- | :--- |
-| **1** | Setup, Interpreter, Syntax, Comments | Git Intro, `git config`, `git init` | Install VS Code, run script, init Git repo | Running Python & Git setup |
-| **2** | Variables, Data Types, Casting, I/O | 3-Stage Architecture, `add`, `commit` | User input, type casting, stage & commit | `user_calculator.py` committed |
-| **3** | Operators, Strings, Slicing, Methods | `git status`, `git log`, `git diff` | Text transformation, slicing reversal | `string_analyzer.py` tracked |
-| **4** | Control Flow: `if`, `elif`, `else`, Logic | Branching Basics, `git branch`, `switch` | Build grading logic system in branch | Branch `feature/conditionals` |
-| **5** | Loops: `for`, `while`, `range`, `break` | Remote Repos, `git remote`, `git push` | Iterative logic, link repo to GitHub | **PROJECT 1**: CLI Tool on GitHub |
-| **6** | Lists, Tuples, Methods, Custom Sort | Remote Syncing, `git fetch`, `git pull` | Custom tuple sorting, pull remote updates | Custom list sorting & sync |
-| **7** | Sets, Dictionaries, Nested Structures | Branch Isolation, `feature/data-structs` | Nested dict store, set operations | `inventory_manager.py` branch |
-| **8** | Comprehensions, Performance Benchmark | Repository Docs, `README.md`, `.gitignore` | Memory benchmark, list/dict comprehensions | `.gitignore` & `README.md` |
-| **9** | Functions: `def`, Parameters, Returns | Workspace Management, `git stash` | Modular functions, stash temporary work | Modular helper scripts |
-| **10** | `*args`, `**kwargs`, Lambda, `map`/`filter` | Branch Merging, `git merge`, `branch -d` | Dynamic logger, merge feature branch | Merged branch & clean repo |
-| **11** | Modules, Packages, `venv`, `pip` | Pre-merge Conflict Prevention | Package scaffold, `.venv`, `requirements.txt` | Virtual Env & package |
-| **12** | File I/O: TXT, CSV, JSON, Context Manager| Recovery Safety, `restore`, `revert`, `reset`| CSV/JSON file parsing, test `git restore` | Safe file I/O & undo |
-| **13** | Exception Handling: `try`/`except`/`finally`| Merge Conflict Resolution | Catch exceptions, resolve merge markers | **PROJECT 2**: File Processor |
-| **14** | OOP Basics: Classes, Objects, `__init__` | Version Tagging, `git tag -a` | Define domain classes, tag `v1.0` release | Tagged `v1.0` on GitHub |
-| **15** | Advanced OOP: Inheritance, Encapsulation | GitHub Pull Requests & Code Review | Derived classes, `super()`, open PR | Feature PR merged on GitHub |
-| **16** | Generators (`yield`), Decorators | Issue Tracking, linking `#issue_id` | Memory generators, timing decorators | Decorators & Issue tracking |
-| **17** | Standard Library, Context Managers | Advanced Git: `rebase`, `cherry-pick` | `pathlib`/`datetime`, `@contextmanager` | Advanced Git & stdlib |
-| **18** | NumPy Arrays, Vectorization, Indexing | Binary File Ignore (`*.npy`) | Vector math, boolean mask, `.npy` I/O | **PROJECT 3**: OOP + NumPy |
-| **19** | Portfolio Architecture, Package Layout | Branch Scaffolding for Portfolio | Scaffold capstone architecture, `setup.py` | Capstone Architecture |
-| **20** | Capstone Completion, Optimization | Final Release Tagging (`v3.0`), Release | Finalize app, code review, release | **CAPSTONE**: Live Portfolio |
+|  Day   | Main Python Topic                                | Git / GitHub Topic                            | Practical Classroom Work                      | Project / Outcome Milestone    |
+| :----: | :----------------------------------------------- | :-------------------------------------------- | :-------------------------------------------- | :----------------------------- |
+| **1**  | Setup, Interpreter, Syntax, Comments             | Git Intro, `git config`, `git init`           | Install VS Code, run script, init Git repo    | Running Python & Git setup     |
+| **2**  | Variables, Data Types, Casting, I/O              | 3-Stage Architecture, `add`, `commit`         | User input, type casting, stage & commit      | `user_calculator.py` committed |
+| **3**  | Operators, Strings, Slicing, Methods             | `git status`, `git log`, `git diff`           | Text transformation, slicing reversal         | `string_analyzer.py` tracked   |
+| **4**  | Control Flow: `if`, `elif`, `else`, Logic        | Branching Basics, `git branch`, `switch`      | Build grading logic system in branch          | Branch `feature/conditionals`  |
+| **5**  | Loops: `for`, `while`, `range`, `break`          | Remote Repos, `git remote`, `git push`        | Iterative logic, link repo to GitHub          | CLI Tool on GitHub             |
+| **6**  | Lists, Tuples, Methods, Custom Sort              | Remote Syncing, `git fetch`, `git pull`       | Custom tuple sorting, pull remote updates     | Custom list sorting & sync     |
+| **7**  | Sets, Dictionaries, Nested Structures            | Branch Isolation, `feature/data-structs`      | Nested dict store, set operations             | `inventory_manager.py` branch  |
+| **8**  | Comprehensions, Performance Benchmark            | Repository Docs, `README.md`, `.gitignore`    | Memory benchmark, list/dict comprehensions    | `.gitignore` & `README.md`     |
+| **9**  | Functions: `def`, Parameters, Returns            | Workspace Management, `git stash`             | Modular functions, stash temporary work       | Modular helper scripts         |
+| **10** | `*args`, `**kwargs`, Lambda, `map()`, `filter()` | Branch Merging, `git merge`, `branch -d`      | Dynamic logger, merge feature branch          | Merged branch & clean repo     |
+| **11** | Modules, Packages, `venv`, `pip`                 | Pre-merge Conflict Prevention                 | Package scaffold, `.venv`, `requirements.txt` | Virtual Env & package          |
+| **12** | File I/O: TXT, CSV, JSON, Context Manager        | Recovery Safety, `restore`, `revert`, `reset` | CSV/JSON file parsing, test `git restore`     | Safe file I/O & undo           |
+| **13** | Exception Handling: `try`/`except`/`finally`     | Merge Conflict Resolution                     | Catch exceptions, resolve merge markers       | File Processor practice        |
+| **14** | OOP Basics: Classes, Objects, `__init__`         | Version Tagging, `git tag -a`                 | Define domain classes, tag `v1.0` release     | Tagged `v1.0` on GitHub        |
+| **15** | Advanced OOP: Inheritance, Encapsulation         | GitHub Pull Requests & Code Review            | Derived classes, `super()`, open PR           | Feature PR merged on GitHub    |
+| **16** | Generators (`yield`), Decorators                 | Issue Tracking, linking `#issue_id`           | Memory generators, timing decorators          | Decorators & Issue tracking    |
+| **17** | Standard Library, Context Managers               | Advanced Git: `rebase`, `cherry-pick`         | `pathlib`/`datetime`, `@contextmanager`       | Advanced Git & stdlib          |
+| **18** | NumPy Arrays, Vectorization, Indexing            | Binary File Ignore (`*.npy`)                  | Vector math, boolean mask, `.npy` I/O         | NumPy analytics practice       |
+| **19** | Portfolio Architecture, Package Layout           | Branch Scaffolding for Portfolio              | Scaffold capstone architecture, `setup.py`    | Capstone Architecture          |
+| **20** | Capstone Completion, Optimization                | Final Release Tagging (`v3.0`), Release       | Finalize app, code review, release            | **CAPSTONE**: Live Portfolio   |
 
 ---
 

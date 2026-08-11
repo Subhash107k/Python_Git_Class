@@ -1,32 +1,163 @@
 # Nepal District Weather Fetcher
 
-This project is a small command-line weather app for Nepal. It lets you browse districts, search by name, and view current weather information from an external weather service.
+A simple Python command-line application for checking current weather information across districts of Nepal.
 
-## Project files
+The application allows users to browse districts, search for a district by name, and retrieve current weather information from an external weather API.
 
-- [main.py](main.py) — the app entry point and menu flow
-- [weather_api.py](weather_api.py) — API requests and response parsing
-- [districts.py](districts.py) — district names and coordinates
-- [config.py](config.py) — environment variable loading
-- [utils.py](utils.py) — formatting and input helpers
-- [.env.example](.env.example) — example environment configuration
-- [requirements.txt](requirements.txt) — project dependencies
+## Features
+
+* 🇳🇵 Browse Nepal districts
+* 🔎 Search districts by name
+* 🌤️ Fetch current weather information
+* 📍 Uses district coordinates for weather requests
+* 🔐 Loads API credentials from environment variables
+* 💻 Interactive command-line interface
+
+## Project Structure
+
+```text
+nepal-weather-fetcher/
+├── main.py              # Application entry point and menu
+├── weather_api.py       # Weather API requests and response handling
+├── districts.py         # District names and coordinates
+├── config.py            # Environment configuration
+├── utils.py             # Formatting and input helpers
+├── .env.example         # Environment variable template
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+```
+
+## Requirements
+
+* Python 3.10+
+* Weather API key
+* Internet connection
 
 ## Setup
 
-1. Create and activate a virtual environment.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Copy [.env.example](.env.example) to `.env` and add your weather API key.
-4. Run the app:
-   ```bash
-   python main.py
-   ```
+### 1. Create a Virtual Environment
 
-## Notes
+```bash
+python -m venv .venv
+```
 
-- The project uses environment variables for the API key.
-- The app is interactive and works from the terminal.
-- A good next step is to replace the current weather service with a free alternative if you want to avoid API-key setup.
+Activate it:
+
+**Windows PowerShell**
+
+```bash
+.venv\Scripts\Activate.ps1
+```
+
+**Linux / macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure Environment Variables
+
+Copy `.env.example` to `.env`:
+
+```bash
+# Windows
+copy .env.example .env
+
+# Linux / macOS
+cp .env.example .env
+```
+
+Add your weather API key to `.env`.
+
+> **Never commit `.env` to Git.** Make sure it is included in `.gitignore`.
+
+### 4. Run the Application
+
+```bash
+python main.py
+```
+
+## How It Works
+
+```text
+User
+  ↓
+CLI Menu
+  ↓
+Select / Search District
+  ↓
+District Coordinates
+  ↓
+Weather API
+  ↓
+Current Weather
+  ↓
+Formatted Terminal Output
+```
+
+## Example
+
+```text
+====================================
+     Nepal District Weather
+====================================
+
+1. Browse Districts
+2. Search District
+3. Exit
+
+Enter your choice: 2
+
+Enter district name: Kathmandu
+
+Weather for Kathmandu
+Temperature : 24°C
+Condition   : Partly Cloudy
+Humidity    : 68%
+```
+
+*The displayed values depend on the current weather API response.*
+
+## Technologies
+
+* Python
+* REST API
+* JSON
+* `requests`
+* Environment variables
+* Virtual environments
+* Git & GitHub
+
+## Learning Outcomes
+
+This project demonstrates practical use of:
+
+* Python modules and packages
+* Functions
+* File and configuration management
+* API integration
+* JSON response processing
+* Exception handling
+* Environment variables
+* Git/GitHub project management
+* CLI application design
+
+## Future Improvements
+
+* Add a free weather API option that does not require an API key.
+* Add weather forecasts.
+* Add temperature unit selection.
+* Improve district search and filtering.
+* Add colored terminal output.
+* Add API error and offline handling.
+* Add automated tests.
+
+## License
+
+This project is created for learning and portfolio purposes.
