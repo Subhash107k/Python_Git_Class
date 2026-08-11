@@ -1,4 +1,4 @@
-# 20-Day Python + Git Zero-to-Hero: Practical Learning Program
+# Python + Git Zero-to-Hero: Practical Learning Program
 
 ---
 
